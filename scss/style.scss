@@ -1,4 +1,14 @@
-//GERAL
+//--VARIAVEIS--
+$color1: #101883;
+$color2: #686868;
+
+//--MIXINS--
+@mixin image-center() {
+    display: block;
+    margin: 0 auto;
+}
+
+//---GERAL---
 * {
     margin: 0;
     padding: 0;
@@ -13,30 +23,37 @@ body {
     font-family: "Lato";
 }
 
-.header-topo a:hover ,.header-bottom a:hover{
+.header-topo a:hover,
+.header-bottom a:hover {
     text-decoration: underline;
 }
 
-//HEADER
+.bg {
+    background-image: url(../home.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+//---HEADER---
 header {
+    padding: {
+        left: 3rem;
+        right: 3rem;
+        bottom: 0.8rem;
+    }
     background: url(../img/bg-header.jpg);
     font-size: 14px;
     .header-topo {
-        padding: 0 3rem;
         display: flex;
         justify-content: space-between;
-        div {
-            padding-top: 2rem;
+        div:nth-child(1),
+        div:nth-child(3) {
+            margin-top: 28px;
         }
         img.logo {
             width: 295px;
             display: block;
-            margin: {
-                top: 21px;
-                bottom: 0;
-                left: auto;
-                right: auto;
-            }
+            @include image-center();
         }
         img.icon {
             display: inline;
@@ -50,13 +67,15 @@ header {
         }
         .a-link {
             margin: 0;
-            margin-right: 57px;
+            margin: {
+                right: 57px;
+                top: 20px;
+            }
         }
 
     }
 
     .header-bottom {
-        padding: 0 3rem;
         display: flex;
         justify-content: space-between;
         img {
@@ -92,12 +111,104 @@ header {
 }
 
 .header-bottom > div:nth-child(3) {
-    display:flex;
-    p a{
-        text-align:center;
+    display: flex;
+    p a {
+        text-align: center;
     }
-    img{
-        display:block;
-        margin:0 auto;
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.header-bottom > div:nth-child(1) {
+    margin-top:10px;
+}
+
+//---NAV---
+nav.header-menu {
+    background: $color1;
+    padding: 0.4rem 0;
+    ul {
+        display: flex;
+        justify-content: center;
+        color: white;
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 116px;
+            height: 90px;
+            text-align: center;
+            margin: 0 4.5px;
+            cursor: pointer;
+            transition:.3s;
+            img {
+                @include image-center();
+            }
+        }
+        div:hover {
+            
+            opacity: 0.5;
+        }
+        div:nth-child(1) {
+            background: #0A59C2;
+        }
+        div:nth-child(2) {
+            background: #ED4334;
+        }
+        div:nth-child(3) {
+            background: #FDAB00;
+        }
+        div:nth-child(4) {
+            background: #00A000;
+        }
+        div:nth-child(5) {
+            background: #6239B9;
+        }
+        div:nth-child(6) {
+            background: #A400AE;
+        }
+        div:nth-child(7) {
+            background: #D34827;
+        }
+        div:nth-child(8) {
+            background: #459D6D;
+        }
+        div:nth-child(9) {
+            background: #00BFF5;
+        }
+    }
+}
+
+//---MASTHEAD--
+
+.masthead{
+    .payment-info{
+        display:flex;
+        justify-content: space-around;
+        flex-basis: 100px;
+        color:$color2;
+        padding:{
+            top:1.3rem; 
+            bottom:1.3rem;
+            left:2rem;
+        }
+        div{
+            flex-basis:165px;
+        }
+        h3,p{
+            text-transform:uppercase;
+        }
+        h3{
+            font-size:15px;
+        }
+        p,span{
+            font-size:12px;
+        }
+        img{
+            float:left;
+        }
     }
 }
