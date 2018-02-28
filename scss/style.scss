@@ -273,3 +273,15 @@ nav.header-menu {
         }
     }
 }
+
+//---CATEGORIES---
+.categories{
+    display:flex;
+    justify-content: space-around;
+    padding:3rem;
+    img:hover{
+        opacity:0.5;
+        transition:.2s;
+        cursor:pointer;
+    }
+}
