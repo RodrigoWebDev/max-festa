@@ -41,8 +41,8 @@ body {
     grid-template-columns: 20% 80%;
 }
 
-.display{
-    display:block;
+.display {
+    display: block;
 }
 
 ul {
@@ -335,15 +335,53 @@ aside {
             margin-right: 3px;
         }
     }
-    .accordion{
-        cursor:pointer;
+    .accordion {
+        cursor: pointer;
     }
-    ul{
-        display:none;
+    ul {
+        display: none;
     }
-    .games{
-        img{
-            margin-top:1.5rem;
+    .games {
+        img {
+            margin-top: 1.5rem;
         }
     }
+}
+
+//CONTENT
+.content {
+    padding: 0 2rem;
+    h2 {
+        color: $color2;
+        display: inline;
+    }
+    .title-icon {
+        display: inline;
+        margin-right: 5px;
+    }
+    .partners {
+        position:relative;
+        .arrow {
+            position: absolute;
+            top: 35%;
+            cursor: pointer;
+        }
+        .arrow:nth-child(1) {
+            left: 0;
+        }
+        .arrow:nth-child(2) {
+            right: 0;
+        }
+        .arrow:hover,
+        a:hover {
+            opacity: .3;
+        }
+    }
+    .partners-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 4rem;
+    }
+
 }
