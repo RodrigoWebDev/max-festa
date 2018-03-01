@@ -74,3 +74,61 @@ arrow[1].onclick = function () {
 
 
 }
+
+//Pega o container das setas da area das cores do produto
+let innerProducts = document.getElementsByClassName("inner-products"); 
+console.log(innerProducts.children[0]);
+
+/*
+//Pega as setas da area de parceiros
+let arrow = document.getElementsByClassName("arrow");
+//Pega as divs
+let div = document.getElementsByClassName("partners-div");
+//Posição(DIV) atual
+let index = 0;
+
+//limpa os campos das divs e deixa so a primeira
+for (i = 0; i < div.length; i++) {
+    div[i].style.display = "none";
+}
+
+div[0].style.display = "flex";
+
+//Adiciona um evento em ambas para mudar de div
+arrow[0].onclick = function () {
+    index -= 1;
+
+    if (index < 0) {
+        index = 0;
+    }
+    console.log(index);
+
+
+    for (i = 0; i < div.length; i++) {
+        div[i].style.display = "none";
+    }
+    div[index].style.display = "flex";
+
+}
+
+arrow[1].onclick = function () {
+    let div = document.getElementsByClassName("partners-div");
+    index += 1;
+    console.log("Index : " + index);
+    console.log("Quantidade de DIVS :" + div.length);
+    
+    if (index > div.length - 1) {
+        index = div.length - 1;
+    }
+    
+
+
+
+    for (i = 0; i < div.length; i++) {
+        div[i].style.display = "none";
+    }
+    div[index].style.display = "flex";
+
+
+}
+*/
