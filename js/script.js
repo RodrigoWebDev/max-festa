@@ -42,7 +42,7 @@ arrow[0].onclick = function () {
     index -= 1;
 
     if (index < 0) {
-        index = 0;
+        index = div.length - 1;
     }
 
 
@@ -57,7 +57,7 @@ arrow[1].onclick = function () {
     index += 1;
     
     if (index > div.length - 1) {
-        index = div.length - 1;
+        index = 0;
     }
     
 
@@ -87,7 +87,7 @@ releases1Arrow[0].onclick = function(){
      productIndex -= 1;
 
     if (productIndex < 0) {
-        productIndex = 0;
+        productIndex = products1.length - 1;
     }
 
     for (i = 0; i < products1.length; i++) {
@@ -101,7 +101,7 @@ releases1Arrow[1].onclick = function(){
     console.log(products1[6]);
     productIndex += 1;
     if (productIndex > products1.length - 1) {
-        productIndex = products1.length - 1;
+        productIndex = 0;
     }
     console.log(productIndex);
     for (i = 0; i < products1.length; i++) {
@@ -126,7 +126,7 @@ releases2Arrow[0].onclick = function(){
      product2Index -= 1;
 
     if (product2Index < 0) {
-        product2Index = 0;
+        product2Index = products2.length - 1;
     }
 
     for (i = 0; i < products2.length; i++) {
@@ -140,7 +140,7 @@ releases2Arrow[1].onclick = function(){
     console.log("clicou");
     product2Index += 1;
     if (product2Index > products2.length - 1) {
-        product2Index = products2.length - 1;
+        product2Index = 0;
     }
     console.log("checou");
 

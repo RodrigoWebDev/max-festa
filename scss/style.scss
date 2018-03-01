@@ -30,6 +30,10 @@ body {
     font-family: "Lato";
 }
 
+ul {
+    list-style: none;
+}
+
 .header-topo a:hover,
 .header-bottom a:hover {
     text-decoration: underline;
@@ -50,9 +54,21 @@ body {
     display: block;
 }
 
-ul {
-    list-style: none;
+.button {
+    background: $button-color;
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 4px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transition: .2s;
 }
+
+.button:hover {
+    background: $button-color-hover;
+}
+
+
 
 //---HEADER---
 header {
@@ -233,23 +249,13 @@ nav.header-menu {
 
 //SLIDER
 .slideshow-container {
-    width: 100%;
-    position: relative;
-    a {
-        background: $button-color;
-        padding: 1rem 2rem;
-        color: white;
-        border-radius: 4px;
-        font-weight: bolder;
-        text-transform: uppercase;
+    .button {
         position: absolute;
         top: 70%;
         right: 19%;
-        transition: .2s;
     }
-    a:hover {
-        background: $button-color-hover;
-    }
+    width: 100%;
+    position: relative;
     .mySlides {
         display: none;
         img {
@@ -346,10 +352,13 @@ aside {
         img {
             margin-top: 1.5rem;
         }
+        img:hover{
+            @include transition();
+        }
     }
 }
 
-//CONTENT
+//---CONTENT---
 .content {
     .releases1,
     .releases2 {
@@ -523,20 +532,38 @@ aside {
         display: flex;
         justify-content: space-between;
         padding: 2rem 0;
+        position: relative;
         img {
             @include image-center();
             width: 100%;
         }
+        .button {
+            top: 70%;
+        }
+        div:nth-child(1) {
+            .button:nth-child(2) {
+                position: absolute;
+                left: 13%;
+            }
+        }
+        div:nth-child(2) {
+            .button:nth-child(2) {
+                position: absolute;
+                right: 13%;
+            }
+        }
+
     }
 
 
 
 }
 
-//GIFTS
+//---GIFTS---
 .gifts {
     img {
         width: 100%;
+
     }
 }
 
@@ -576,21 +603,21 @@ aside {
         input[type="email"] {
             width: 303px;
         }
-        input[type="text"]{
-            margin-right:10px;
+        input[type="text"] {
+            margin-right: 10px;
         }
-        input[type="submit"]{
-            margin-left:10px;
-            width:134px;
-            background:$color1;
-            color:white;
+        input[type="submit"] {
+            margin-left: 10px;
+            width: 134px;
+            background: $color1;
+            color: white;
             text-transform: uppercase;
             font-weight: bolder;
-            font-size:15px;
+            font-size: 15px;
         }
-        input[type="submit"]:hover{
-            background:#1927c1;
-            cursor:pointer;
+        input[type="submit"]:hover {
+            background: #1927c1;
+            cursor: pointer;
             transition: .3s;
         }
 
@@ -598,48 +625,85 @@ aside {
 
 }
 
-.bottom-menu{
-    display:flex;
+.bottom-menu {
+    display: flex;
     justify-content: space-between;
-    background:url(../img/max-footer.jpg);
-    background:{
-        repeat:no-repeat;
-        size:cover;
+    background: url(../img/max-footer.jpg);
+    background: {
+        repeat: no-repeat;
+        size: cover;
     }
     color:white;
-    padding:{
-        left:100px;
-        right:1rem;
-        bottom:60px;
-        top:1rem;
+    padding: {
+        left: 160px;
+        right: 1rem;
+        bottom: 20px;
+        top: 1rem;
     }
-    div{
-        padding:0 2.5rem;
+    div {
+        padding: 0 2.5rem;
     }
-    div:nth-child(5){
-        padding:0;
-        margin:0;
+    div:nth-child(5) {
+        padding: 0;
+        margin: 0;
     }
-    
-    h2{
+
+    h2 {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    ul {
+        font-size: 0.9rem;
+        li {
+            margin-bottom: 1rem;
+        }
+    }
+    a {
+        color: white;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    img {
+        margin: {
+            right: 10px;
+        }
+    }
+    img:hover{
+        @include transition();
+    }
+}
+
+//---FOOTER---
+footer{
+    .hr{
+        background:$color2;
+        height:1px;
+        width:100%;
+    }
+    img:hover{
+        @include transition();
+    }
+}
+footer > div:nth-child(1){
+    padding:2rem 3rem;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    h3{
+        color:#333333;
         font-size:1rem;
-        margin-bottom:1.5rem;
     }
-    ul{
-        font-size:0.9rem;
-        li{
-            margin-bottom:1rem;
-        }
+    img,h3{
+        margin-right:1rem;
     }
-    a{
-        color:white;
-    }
-    a:hover{
-        text-decoration:underline;
-    }
-    img{
-        margin:{
-            right:10px;
-        }
-    }
+}
+
+footer > div:nth-child(3){
+    padding:2rem 3rem;
+    padding-bottom:5rem;
+    display:flex;
+    justify-content: space-between;
+    color:$color2;
+    font-size:0.8rem;
 }
