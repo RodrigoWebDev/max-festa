@@ -351,7 +351,8 @@ aside {
 
 //CONTENT
 .content {
-    .releases1,.releases2 {
+    .releases1,
+    .releases2 {
         position: relative;
         .arrow:hover {
             @include transition();
@@ -361,11 +362,11 @@ aside {
             position: absolute;
             top: 33%;
         }
-        .arrow:nth-child(3){
-            left:0;
+        .arrow:nth-child(3) {
+            left: 0;
         }
-        .arrow:nth-child(4){
-            right:0;
+        .arrow:nth-child(4) {
+            right: 0;
         }
 
     }
@@ -530,4 +531,115 @@ aside {
 
 
 
+}
+
+//GIFTS
+.gifts {
+    img {
+        width: 100%;
+    }
+}
+
+.newsletter {
+    margin-top: 15px;
+    padding: 1.5rem 3rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffbd07;
+    div:nth-child(1) {
+        flex-basis: 500px;
+    }
+    h2 {
+        text-transform: uppercase;
+        font-size: 18.5px;
+    }
+    p {
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    img {
+        float: left;
+        margin-right: 18.5px;
+    }
+    form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: 303px;
+        }
+        input[type="text"]{
+            margin-right:10px;
+        }
+        input[type="submit"]{
+            margin-left:10px;
+            width:134px;
+            background:$color1;
+            color:white;
+            text-transform: uppercase;
+            font-weight: bolder;
+            font-size:15px;
+        }
+        input[type="submit"]:hover{
+            background:#1927c1;
+            cursor:pointer;
+            transition: .3s;
+        }
+
+    }
+
+}
+
+.bottom-menu{
+    display:flex;
+    justify-content: space-between;
+    background:url(../img/max-footer.jpg);
+    background:{
+        repeat:no-repeat;
+        size:cover;
+    }
+    color:white;
+    padding:{
+        left:100px;
+        right:1rem;
+        bottom:60px;
+        top:1rem;
+    }
+    div{
+        padding:0 2.5rem;
+    }
+    div:nth-child(5){
+        padding:0;
+        margin:0;
+    }
+    
+    h2{
+        font-size:1rem;
+        margin-bottom:1.5rem;
+    }
+    ul{
+        font-size:0.9rem;
+        li{
+            margin-bottom:1rem;
+        }
+    }
+    a{
+        color:white;
+    }
+    a:hover{
+        text-decoration:underline;
+    }
+    img{
+        margin:{
+            right:10px;
+        }
+    }
 }
