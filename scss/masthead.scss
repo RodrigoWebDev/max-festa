@@ -1,0 +1,90 @@
+//---MASTHEAD--
+.masthead {
+    .payment-info {
+        display: flex;
+        justify-content: space-around;
+        flex-basis: 100px;
+        color: $color2;
+        padding: {
+            top: 1.3rem;
+            bottom: 1.3rem;
+            left: 2rem;
+        }
+        div {
+            flex-basis: 165px;
+        }
+        h3,
+        p {
+            text-transform: uppercase;
+        }
+        h3 {
+            font-size: 15px;
+        }
+        p,
+        span {
+            font-size: 12px;
+        }
+        img {
+            float: left;
+        }
+    }
+}
+
+//SLIDER
+.slideshow-container {
+    .button {
+        position: absolute;
+        top: 70%;
+        right: 19%;
+    }
+    width: 100%;
+    position: relative;
+    .mySlides {
+        display: none;
+        img {
+            vertical-align: middle;
+        }
+    }
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: 70px;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+    }
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    @media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .text {
+            font-size: 11px
+        }
+    }
+}
+
+//---CATEGORIES---
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    img:hover {
+        @include transition();
+        cursor: pointer;
+    }
+}

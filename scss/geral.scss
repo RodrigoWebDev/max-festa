@@ -1,0 +1,73 @@
+//--VARIAVEIS--
+$color1: #101883;
+$color2: #686868;
+$button-color: #e7ab27;
+$button-color2: #61ac28;
+$button-color-hover:#e5ba5e;
+
+//--MIXINS--
+@mixin image-center() {
+    display: block;
+    margin: 0 auto;
+}
+
+@mixin transition() {
+    transition: .3s;
+    opacity: 0.5;
+}
+
+//---GERAL---
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Lato";
+}
+
+ul {
+    list-style: none;
+}
+
+.header-topo a:hover {
+    text-decoration: underline;
+}
+
+.flex {
+    display: flex;
+}
+
+.bg {
+    background-image: url(../home.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.display {
+    display: block;
+}
+
+.button {
+    background: $button-color;
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 4px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+.button:hover {
+    background: $button-color-hover;
+}

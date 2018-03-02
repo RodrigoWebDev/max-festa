@@ -1,0 +1,178 @@
+//---HEADER---
+header {
+    padding: {
+        left: 3rem;
+        right: 3rem;
+    }
+    background: url(../img/bg-header.jpg);
+    font-size: 14px;
+    .header-topo {
+        display: flex;
+        justify-content: space-between;
+        div:nth-child(1),
+        div:nth-child(3) {
+            margin-top: 28px;
+        }
+        img.logo {
+            width: 295px;
+            display: block;
+            @include image-center();
+        }
+        img.icon {
+            display: inline;
+            width: 18px;
+            height: 18px;
+
+        }
+        a {
+            color: #101883;
+            margin-left: 8px;
+        }
+        .a-link {
+            margin: 0;
+            margin: {
+                right: 57px;
+                top: 20px;
+            }
+        }
+
+    }
+
+    .header-bottom {
+        display: flex;
+        justify-content: space-between;
+        img {
+            width: 30px;
+        }
+        a.social:hover {
+            @include transition();
+        }
+        form {
+            width: 650px;
+            display: flex;
+            justify-content: center;
+            input[type="text"] {
+                border: none;
+                padding: 15px;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                width: 100%;
+                margin-left: 100px;
+                position: relative;
+            }
+            button {
+                background: white;
+                border: none;
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+                padding: 0 10px;
+                cursor: pointer;
+            }
+            input,button{
+                height:50px;
+            }
+        }
+        .hover:hover {
+            cursor: pointer;
+            color: white;
+        }
+        .hover {
+            color: $color1;
+            padding-bottom:0.8rem;
+            svg {
+                font-size: 2rem;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .login-shop {
+            position: relative;
+            .login {
+                background: white;
+                width: 150px;
+                position: absolute;
+                top: 100%;
+                right: 26%;
+                text-transform: uppercase;
+                font-size: 12px;
+                z-index: 1;
+                box-shadow: 1px 10px 15px #242424;
+                display: none;
+                li {
+                    text-align: center;
+                    padding: 0.6rem;
+                }
+                a {
+                    color: black;
+                    padding: 0.6rem;
+                }
+                a:hover {
+                    color: white;
+                }
+                li:hover {
+                    background: $button-color;
+                }
+            }
+            .shop {
+                background: white;
+                position: absolute;
+                top: 100%;
+                right: -10%;
+                z-index: 2;
+                text-transform: uppercase;
+                font-size: 10px;
+                color: $color2 !important;
+                width: 319px;
+                box-shadow: 1px 10px 15px #242424;
+                line-height: 2;
+                display:none;
+                h3 {
+                    font-weight: normal;
+                }
+                img {
+                    float: left;
+                    width: 60px;
+                }
+                .shop-buttons {
+                    a {
+                        background: green;
+                        flex-basis: 45%;
+                        text-align: center;
+                        color: white;
+                        font-weight: bolder;
+                        line-height: 1;
+                        font-size: 14px;
+                        padding: 8px;
+                        border-radius: 4px;
+                    }
+                    a:nth-child(1){
+                        background:$button-color;
+                    }
+                    a:nth-child(2){
+                        background:$button-color2;
+                    }
+                    a:hover{
+                        @include transition();
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+.header-bottom > div:nth-child(3) {
+    display: flex;
+    p a {
+        text-align: center;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.header-bottom > div:nth-child(1) {
+    margin-top: 10px;
+}
