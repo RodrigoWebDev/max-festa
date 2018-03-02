@@ -73,6 +73,9 @@ header {
                 margin-left: 100px;
                 position: relative;
             }
+            button[type="submit"]{
+                margin-left:-1px;
+            }
             button {
                 background: white;
                 border: none;
