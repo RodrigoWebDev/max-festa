@@ -11,32 +11,80 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="b">
-    <div class="quick-view">
-        <div class="product">
-            <a href="produto.html"><img style="height:272px" src="img/products/product1.jpg" alt="produto" title="produto"></a>
-            <div class="inner-products">
-                <span class="icon-arrow icon-arrow-left"></span>
-                <div class="color-squares">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+<body>
+    <div class="animated fadeIn overlay">
+        <div class="quick-view">
+            <img class="close" src="img/icons/close.jpg">
+            <div class="product-quick-view">
+                <img src="img/quick-product.jpg">
+                <img src="img/spy.jpg">
+                <div>
+                    <div>
+                        <img src="img/products/product1.jpg">
+                    </div>
+                    <div>
+                        <img src="img/products/product2.jpg">
+                    </div>
+                    <div>
+                        <img src="img/products/product3.jpg">
+                    </div>
+                    <div>
+                        <img src="img/products/product1.jpg">
+                    </div>
+                    <div>
+                        <img src="img/products/product2.jpg">
+                    </div>
+                    <div>
+                        <img src="img/products/product3.jpg">
+                    </div>
                 </div>
-                <span class="icon-arrow icon-arrow-right"></span>
             </div>
+            <div class="product">
+                <img style="position:absolute;top:10%;right:0;" src="img/icons/release.jpg" alt="">
+                <h2><a href="produto.html">Camisa junina flanelada bebê</a></h2>
+                <span style="font-size:10px;text-transform: uppercase;color:#686868;">código 8876</span>
+                <p style="margin-top:15px;">R$30,00</p>
+                <p>R$25,20</p>
+                <p><span>10%</span> de desconto no boleto</p>
+                <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
+                <p>Selecione a cor:</p>
+                <div class="inner-products">
 
-            <h2><a href="produto.html">Camisa junina flanelada bebê</a></h2>
-            <p>R$30,00</p>
-            <p>R$25,20</p>
-            <p><span>10%</span> de desconto no boleto</p>
-            <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-            <p></p>Quantidade:<input type="number">
+                    <span class="icon-arrow icon-arrow-left"></span>
+                    <div class="color-squares">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <span class="icon-arrow icon-arrow-right"></span>
+                </div>
+                <p></p>Quantidade:<input type="number">
+                <a href="#" class="shop-button">Comprar</a>
+                <div class="description">
+                    <h3>Descrição:</h3>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." <a href="#">saiba mais</a></p>
+                </div>
+                <div class="flex">
+                    <span style="color:#3193DE">Compartilhe:</span>
+                    <ul class="flex" style="align-items:center;margin-left:15px;">
+                        <a href="#" style="margin-right:10px;">
+                            <li><img src="img/icons/quick-facebook.jpg"></li>
+                        </a>
+                        <a href="#" style="margin-right:10px;">
+                            <li><img src="img/icons/quick-twitter.jpg"></li>
+                        </a>
+                        <a href="#">
+                            <li><img src="img/icons/quick-printerest.jpg"></li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <!--HEADER-->
-    <header>
+    <header class="wow fadeIn">
         <div class="header-topo">
             <div>
                 <img class="icon" src="img/icons/headset-icon.png" alt="Central de Atendimento"><a href="">Central de Atendimento</a>
@@ -118,8 +166,8 @@
                         <span style="font-weight: bolder; font-size:14px;">total:R$129,90</span>
                     </div>
                     <div class="flex shop-buttons" style="justify-content: space-between; padding: 1rem;">
-                        <a href="">Continuar <br>comprando</a>
-                        <a href="">Finalizar <br>compra</a>
+                        <a href="" class="shop-button">Continuar <br>comprando</a>
+                        <a href="" class="shop-button">Finalizar <br>compra</a>
                     </div>
                 </div>
             </div>
@@ -127,7 +175,7 @@
         </div>
     </header>
 
-    <nav class="header-menu">
+    <nav class="header-menu wow fadeIn">
         <ul>
             <div>
                 <img src="img/icons/halloween-evil-pumpkin.png" alt="">
@@ -179,7 +227,7 @@
     <!--MASTHEAD-->
 
     <section class="masthead">
-        <div class="payment-info">
+        <div class="payment-info wow fadeIn">
             <div>
                 <img src="img/icons/car.jpg" alt="">
                 <h3>Frete grátis</h3>
@@ -209,18 +257,18 @@
         </div>
 
         <!--SLIDE-->
-        <div class="slideshow-container">
+        <div class="slideshow-container wow fadeIn">
 
-            <div class="animated fadeIn mySlides">
+            <div class="mySlides">
                 <img src="img/banner1.jpg" style="width:100%">
                 <a class="button" href="">Confira aqui</a>
             </div>
 
-            <div class="animated fadeIn mySlides">
+            <div class="mySlides">
                 <img src="img/banner2.jpg" style="width:100%">
             </div>
 
-            <div class="animated fadeIn mySlides">
+            <div class="mySlides">
                 <img src="img/banner3.jpg" style="width:100%">
             </div>
 
@@ -231,7 +279,7 @@
         </div>
 
 
-        <div class="categories">
+        <div class="categories wow fadeInUp">
             <a href="#"><img src="img/mini-banner4.jpg" alt="Fantasias" title="Fantasias"></a>
             <a href="#"><img src="img/mini-banner3.jpg" alt="Festa junina" title="Festa junina"></a>
             <a href="#"><img src="img/mini-banner2.jpg" alt="Doces e confeitos" title="Doces e confeitos"></a>
@@ -243,7 +291,7 @@
         <!--ASIDE-->
         <aside>
             <section class="aside-menu">
-                <div>
+                <div class="wow fadeInUp">
                     <div class="accordion">
                         <h2>Haloween</h2>
                         <div class="hr"></div>
@@ -257,7 +305,7 @@
                     </ul>
 
                 </div>
-                <div>
+                <div class="wow fadeInUp">
                     <div class="accordion">
                         <h2>Temas para Festas</h2>
                         <div class="hr"></div>
@@ -269,7 +317,7 @@
                     </ul>
 
                 </div>
-                <div>
+                <div class="wow fadeInUp">
                     <div class="accordion">
                         <h2>Fntasias e Adereços</h2>
                         <div class="hr"></div>
@@ -281,7 +329,7 @@
                         <li class="see-more"><a href="#"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="wow fadeInUp">
                     <div class="accordion">
                         <h2>Fantasias e Adereços</h2>
                         <div class="hr"></div>
@@ -293,7 +341,7 @@
                         <li class="see-more"><a href="#"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="wow fadeInUp">
                     <div class="accordion">
                         <h2>Artigos para festa</h2>
                         <div class="hr"></div>
@@ -305,7 +353,7 @@
                         <li class="see-more"><a href="#"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="wow fadeInUp">
                     <div class="accordion">
                         <h2>Balões</h2>
                         <div class="hr"></div>
@@ -317,7 +365,7 @@
                         <li class="see-more"><a href="#"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="wow fadeInUp">
                     <div class="accordion">
                         <h2>Doces</h2>
                         <div class="hr"></div>
@@ -329,7 +377,7 @@
                         <li class="see-more"><a href="#"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="wow fadeInUp">
                     <div class="accordion">
                         <h2>Lembrancinhas</h2>
                         <div class="hr"></div>
@@ -342,17 +390,17 @@
                     </ul>
                 </div>
             </section>
-            <section class="games">
+            <section class="games wow fadeInUp">
                 <a href="#"><img src="img/games.jpg" alt=""></a>
             </section>
         </aside>
 
         <!--CONTENT-->
         <section class="content">
-            <img class="title-icon" src="img/icons/balloon1.jpg">
-            <h2>Nossos parceiros</h2>
+            <img class="title-icon wow fadeInUp" src="img/icons/balloon1.jpg">
+            <h2 class="wow fadeInUp">Nossos parceiros</h2>
 
-            <div class="partners">
+            <div class="partners wow fadeInUp">
                 <img class="arrow" src="img/brands/arrow2-left.jpg">
                 <img class="arrow" src="img/brands/arrow2-right.jpg">
                 <div class="partners-div">
@@ -424,14 +472,14 @@
                     </div>
                 </div>
             </div>
-            <div class="releases1">
+            <div class="releases1 wow fadeInUp">
                 <img class="title-icon" src="img/icons/ballon2.jpg">
                 <h2>Lançamentos</h2>
                 <img class="arrow" src="img/brands/arrow2-left.jpg">
                 <img class="arrow" src="img/brands/arrow2-right.jpg">
                 <div class="products1">
                     <div class="product">
-                        <a href="produto.html"><img style="height:272px" src="img/products/product1.jpg" alt="produto" title="produto"></a>
+                        <a href="#"><img style="height:272px" src="img/products/product1.jpg" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -453,7 +501,7 @@
                     </div>
 
                     <div class="product">
-                        <a href="produto.html"><img src="img/products/product2.jpg" alt="produto" title="produto"></a>
+                        <a href="#"><img src="img/products/product2.jpg" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -473,7 +521,7 @@
                     </div>
 
                     <div class="product">
-                        <a href="produto.html"><img style="height:264px" src="img/products/product3.jpg" alt="produto" title="produto"></a>
+                        <a href="#"><img style="height:264px" src="img/products/product3.jpg" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -496,7 +544,7 @@
                 </div>
                 <div class="products1">
                     <div class="product">
-                        <a href="produto.html"><img width="200" height="200" src="img/lorem.png" alt="produto" title="produto"></a>
+                        <a href="#"><img width="200" height="200" src="img/lorem.png" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -517,7 +565,7 @@
                     </div>
 
                     <div class="product">
-                        <a href="produto.html"><img width="200" height="200" src="img/lorem.png" alt="produto" title="produto"></a>
+                        <a href="#"><img width="200" height="200" src="img/lorem.png" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -537,7 +585,7 @@
                     </div>
 
                     <div class="product">
-                        <a href="produto.html"><img width="200" height="200" src="img/lorem.png" alt="produto" title="produto"></a>
+                        <a href="#"><img width="200" height="200" src="img/lorem.png" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -559,7 +607,7 @@
                 </div>
                 <div class="products1">
                     <div class="product">
-                        <a href="produto.html"><img width="200" height="200" src="img/lorem2.jpg" alt="produto" title="produto"></a>
+                        <a href="#"><img width="200" height="200" src="img/lorem2.jpg" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -580,7 +628,7 @@
                     </div>
 
                     <div class="product">
-                        <a href="produto.html"><img width="200" height="200" src="img/lorem2.jpg" alt="produto" title="produto"></a>
+                        <a href="#"><img width="200" height="200" src="img/lorem2.jpg" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -600,7 +648,7 @@
                     </div>
 
                     <div class="product">
-                        <a href="produto.html"><img width="200" height="200" src="img/lorem2.jpg" alt="produto" title="produto"></a>
+                        <a href="#"><img width="200" height="200" src="img/lorem2.jpg" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -622,7 +670,7 @@
                 </div>
                 <div class="products1">
                     <div class="product">
-                        <a href="produto.html"><img width="200" height="200" src="img/lorem3.jpg" alt="produto" title="produto"></a>
+                        <a href="#"><img width="200" height="200" src="img/lorem3.jpg" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -643,7 +691,7 @@
                     </div>
 
                     <div class="product">
-                        <a href="produto.html"><img width="200" height="200" src="img/lorem3.jpg" alt="produto" title="produto"></a>
+                        <a href="#"><img width="200" height="200" src="img/lorem3.jpg" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -663,7 +711,7 @@
                     </div>
 
                     <div class="product">
-                        <a href="produto.html"><img width="200" height="200" src="img/lorem3.jpg" alt="produto" title="produto"></a>
+                        <a href="#"><img width="200" height="200" src="img/lorem3.jpg" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -685,7 +733,7 @@
                 </div>
             </div>
 
-            <div class="product-banner">
+            <div class="product-banner wow fadeInUp">
                 <div>
                     <img src="img/banner-center1.jpg" alt="banner1">
                     <a class="button" href="produto.html">Conheça</a>
@@ -696,14 +744,14 @@
                 </div>
             </div>
 
-            <div class="releases2">
+            <div class="releases2 wow fadeInUp">
                 <img class="title-icon" src="img/icons/balloon3.jpg">
                 <h2>Mais vistos</h2>
                 <img class="arrow" src="img/brands/arrow2-left.jpg">
                 <img class="arrow" src="img/brands/arrow2-right.jpg">
                 <div class="products2">
                     <div class="product">
-                        <a href="produto.html"><img style="height:272px" src="img/products/product1.jpg" alt="produto" title="produto"></a>
+                        <a href="#"><img style="height:272px" src="img/products/product1.jpg" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -725,7 +773,7 @@
                     </div>
 
                     <div class="product">
-                        <a href="produto.html"><img src="img/products/product2.jpg" alt="produto" title="produto"></a>
+                        <a href="#"><img src="img/products/product2.jpg" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -745,7 +793,7 @@
                     </div>
 
                     <div class="product">
-                        <a href="produto.html"><img style="height:264px" src="img/products/product3.jpg" alt="produto" title="produto"></a>
+                        <a href="#"><img style="height:264px" src="img/products/product3.jpg" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -768,7 +816,7 @@
                 </div>
                 <div class="products2">
                     <div class="product">
-                        <a href="produto.html"><img width="200" height="200" src="img/lorem.png" alt="produto" title="produto"></a>
+                        <a href="#"><img width="200" height="200" src="img/lorem.png" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -789,7 +837,7 @@
                     </div>
 
                     <div class="product">
-                        <a href="produto.html"><img width="200" height="200" src="img/lorem.png" alt="produto" title="produto"></a>
+                        <a href="#"><img width="200" height="200" src="img/lorem.png" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -809,7 +857,7 @@
                     </div>
 
                     <div class="product">
-                        <a href="produto.html"><img width="200" height="200" src="img/lorem.png" alt="produto" title="produto"></a>
+                        <a href="#"><img width="200" height="200" src="img/lorem.png" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -831,7 +879,7 @@
                 </div>
                 <div class="products2">
                     <div class="product">
-                        <a href="produto.html"><img width="200" height="200" src="img/lorem2.jpg" alt="produto" title="produto"></a>
+                        <a href="#"><img width="200" height="200" src="img/lorem2.jpg" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -852,7 +900,7 @@
                     </div>
 
                     <div class="product">
-                        <a href="produto.html"><img width="200" height="200" src="img/lorem2.jpg" alt="produto" title="produto"></a>
+                        <a href="#"><img width="200" height="200" src="img/lorem2.jpg" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -872,7 +920,7 @@
                     </div>
 
                     <div class="product">
-                        <a href="produto.html"><img width="200" height="200" src="img/lorem2.jpg" alt="produto" title="produto"></a>
+                        <a href="#"><img width="200" height="200" src="img/lorem2.jpg" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -894,7 +942,7 @@
                 </div>
                 <div class="products2">
                     <div class="product">
-                        <a href="produto.html"><img width="200" height="200" src="img/lorem3.jpg" alt="produto" title="produto"></a>
+                        <a href="#"><img width="200" height="200" src="img/lorem3.jpg" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -915,7 +963,7 @@
                     </div>
 
                     <div class="product">
-                        <a href="produto.html"><img width="200" height="200" src="img/lorem3.jpg" alt="produto" title="produto"></a>
+                        <a href="#"><img width="200" height="200" src="img/lorem3.jpg" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -935,7 +983,7 @@
                     </div>
 
                     <div class="product">
-                        <a href="produto.html"><img width="200" height="200" src="img/lorem3.jpg" alt="produto" title="produto"></a>
+                        <a href="#"><img width="200" height="200" src="img/lorem3.jpg" alt="produto" title="produto"></a>
                         <div class="inner-products">
                             <span class="icon-arrow icon-arrow-left"></span>
                             <div class="color-squares">
@@ -960,12 +1008,12 @@
     </div>
 
     <!--GIFTS-->
-    <section class="gifts">
+    <section class="gifts wow fadeInUp">
         <a href="produto.html"><img src="img/banner-footer.jpg" alt="banner footer"></a>
     </section>
 
     <!--NEWSLETTER-->
-    <section class="newsletter">
+    <section class="newsletter wow fadeInUp">
         <div>
             <img src="img/icons/footer-subscribe.jpg" alt="Newsletter">
             <h2>Maxfesta news</h2>
@@ -979,7 +1027,7 @@
     </section>
 
     <!--BOTTOM MENU-->
-    <section class="bottom-menu">
+    <section class="bottom-menu wow fadeInUp">
         <div>
             <h2>Central de Ajuda</h2>
             <ul>
@@ -1022,7 +1070,7 @@
     </section>
 
     <!--FOOTER-->
-    <footer>
+    <footer wow fadeInUp>
         <div>
             <div style="display:flex;align-items:center;">
                 <h3>Pagamentos:</h3>
@@ -1052,6 +1100,11 @@
             </div>
         </div>
     </footer>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+    </script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="js/script.js"></script>
     <script src="js/slide.js"></script>

@@ -8,7 +8,6 @@ showSlides(slideIndex);
 //Deixa o Slide automático
 window.setInterval(function () {
     plusSlides(1);
-    console.log();
 }, 2300);
 
 //Passa e volta o slide

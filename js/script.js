@@ -98,12 +98,10 @@ releases1Arrow[0].onclick = function () {
 }
 
 releases1Arrow[1].onclick = function () {
-    console.log(products1[6]);
     productIndex += 1;
     if (productIndex > products1.length - 1) {
         productIndex = 0;
     }
-    console.log(productIndex);
     for (i = 0; i < products1.length; i++) {
         products1[i].style.display = "none";
     }
@@ -181,10 +179,12 @@ basket.onmouseout = function () {
     shop.style.display = "none";
 }
 
+
+//Mostra a div d navegação ao passar o mouse por cima de alguns dos itens de categorias
 let dropdownNav = document.getElementsByClassName("dropdown-nav")[0];
 let menu = document.querySelectorAll("nav ul div");
 dropdownNav.style.display = "none";
-console.log(menu);
+
 
 for (i = 0; i < menu.length; i++) {
     menu[i].onmouseover = function () {
@@ -202,3 +202,36 @@ dropdownNav.onmouseover = function () {
 dropdownNav.onmouseout = function () {
     dropdownNav.style.display = "none";
 }
+
+//Mostra o quickview painel ao clicar na imagem do produto
+let prodImg =  document.querySelectorAll(".product a img");
+let quickView = document.getElementsByClassName("overlay")[0];
+let close = document.querySelectorAll(".quick-view .close");
+console.log(close);
+
+close[0].onclick = function(){
+    
+    quickView.style.display = "none";
+    console.log("funcionou");
+}
+
+for (let i = 0; i < prodImg.length; i++) {
+    prodImg[i].onclick = function(){
+        quickView.style.display = "block";
+    }
+}
+
+//Mostra o botao "espiar" em cima da imagem
+let quickProd = document.querySelectorAll(".product-quick-view img:nth-child(1)")[0];
+let spy = document.querySelectorAll(".product-quick-view img:nth-child(2)")[0];
+
+
+quickProd.onmouseover = function(){
+    spy.style.display = "block";
+}
+
+quickProd.onmouseout = function(){
+    spy.style.display = "none";
+}
+
+

@@ -1,4 +1,6 @@
+@import "geral.scss";
 //---HEADER---
+
 header {
     padding: {
         left: 3rem;
@@ -134,25 +136,11 @@ header {
                     width: 60px;
                 }
                 .shop-buttons {
-                    a {
-                        background: green;
-                        flex-basis: 45%;
-                        text-align: center;
-                        color: white;
-                        font-weight: bolder;
-                        line-height: 1;
-                        font-size: 14px;
-                        padding: 8px;
-                        border-radius: 4px;
-                    }
                     a:nth-child(1){
                         background:$button-color;
                     }
                     a:nth-child(2){
                         background:$button-color2;
-                    }
-                    a:hover{
-                        @include transition();
                     }
                 }
 

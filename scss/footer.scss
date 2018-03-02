@@ -1,8 +1,11 @@
+@import "geral.scss";
 //---GIFTS---
 .gifts {
     img {
         width: 100%;
-
+    }
+    img:hover{
+        @include transition();    
     }
 }
 
