@@ -12,6 +12,9 @@
 </head>
 
 <body class="b">
+   <div class="quick-view">
+       
+   </div>
     <!--HEADER-->
     <header>
         <div class="header-topo">
@@ -39,16 +42,68 @@
                 <input type="text" placeholder="Digite sua busca...">
                 <button type="submit"><img src="img/icons/magnifier-icon.png" alt=""></button>
             </form>
-            <div>
-                <div>
-                    <img src="img/icons/user-icon.png" alt="Minha conta">
-                    <p><a href="">Minha Conta</a></p>
+            <div class="login-shop">
+                <div class="hover">
+                    <i class="fas fa-user"></i>
+                    <p>Minha Conta</p>
                 </div>
-                <div style="margin-left:30px;">
-                    <img src="img/icons/basket-icon.png" alt="">
-                    <p><a href="">01 item</a></p>
+                <div class="hover" style="margin-left:30px;">
+                    <i class="fas fa-shopping-basket"></i>
+                    <p>01 item</p>
+                </div>
+                <div class="login">
+                    <ul>
+                        <li><a href="#">Meus pedidos</a></li>
+                        <li><a href="#">Minha conta</a></li>
+                    </ul>
+                </div>
+
+                <div class="shop">
+
+                    <div class="flex" style="padding: 1rem;">
+
+                        <div>
+                            <img src="img/baby.jpg" alt="Chapeu">
+                        </div>
+                        <div style="width:319px">
+                            <h3>Lorem ipsum dolor sit</h3>
+                            <p>cod: 11033</p>
+                            <p>cor:preto/tamanho:5</p>
+                            <p>quantidade:1</p>
+                            <div>
+                            </div>
+                            <span style="float:left; font-weight: bolder;">quantidade:</span>
+                            <span style="float:right;font-weight: bolder;">R$129,90</span>
+                        </div>
+                    </div>
+
+                    <div class="flex" style="padding: 1rem;">
+
+                        <div>
+                            <img src="img/baby.jpg" alt="Chapeu">
+                        </div>
+                        <div style="width:319px">
+                            <h3>Lorem ipsum dolor sit</h3>
+                            <p>cod: 11033</p>
+                            <p>cor:preto/tamanho:5</p>
+                            <p>quantidade:1</p>
+                            <div>
+                            </div>
+                            <span style="float:left; font-weight: bolder;">quantidade:</span>
+                            <span style="float:right;font-weight: bolder;">R$129,90</span>
+                        </div>
+                    </div>
+                    <div class="flex" style="justify-content: space-between; align-items: center; background:#ededed;padding: 10px 1rem;">
+                        <span>2 itens no carrinho</span>
+                        <span style="font-weight: bolder; font-size:14px;">total:R$129,90</span>
+                    </div>
+                    <div class="flex shop-buttons" style="justify-content: space-between; padding: 1rem;">
+                        <a href="">Continuar <br>comprando</a>
+                        <a href="">Finalizar <br>compra</a>
+                    </div>
                 </div>
             </div>
+
         </div>
     </header>
 
@@ -91,6 +146,14 @@
                 <p>Todas as<br> categorias</p>
             </div>
         </ul>
+        <div class="dropdown-nav flex">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div>
+                <img src="img/img-nav.jpg" alt="Linha princesas">
+            </div>
+
+        </div>
     </nav>
 
     <!--MASTHEAD-->
@@ -128,16 +191,16 @@
         <!--SLIDE-->
         <div class="slideshow-container">
 
-            <div class="animated bounceIn mySlides">
+            <div class="animated fadeIn mySlides">
                 <img src="img/banner1.jpg" style="width:100%">
                 <a class="button" href="">Confira aqui</a>
             </div>
 
-            <div class="animated bounceIn mySlides">
+            <div class="animated fadeIn mySlides">
                 <img src="img/banner2.jpg" style="width:100%">
             </div>
 
-            <div class="animated bounceIn mySlides">
+            <div class="animated fadeIn mySlides">
                 <img src="img/banner3.jpg" style="width:100%">
             </div>
 
@@ -969,7 +1032,7 @@
             </div>
         </div>
     </footer>
-
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="js/script.js"></script>
     <script src="js/slide.js"></script>
 </body>
