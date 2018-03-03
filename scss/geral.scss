@@ -204,3 +204,112 @@ ul {
 
 
 }
+
+  .quick-view {
+        padding: 2rem;
+        background: white;
+        height: 100vh;
+        width: 1150px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1000;
+        .close {
+            color: grey;
+            font-size: 2rem;
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            cursor: pointer;
+        }
+        .close:hover {
+            @include transition();
+        }
+        .product {
+            h2 {
+                a {
+                    color: black;
+                }
+                a:hover {
+                    color: black;
+                    text-decoration: underline;
+                    -webkit-transition: none;
+                    -o-transition: none;
+                    transition: none;
+                }
+            }
+        }
+        .product-quick-view {
+            margin-right: 2.8rem;
+            position: relative;
+            img {
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+            }
+            img:nth-child(2) {
+                display: none;
+                position: absolute;
+                bottom: 43%;
+                right: 9%;
+            }
+            div:nth-child(3) {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                img {
+                    width: 79px;
+                    height: 81px;
+                }
+                img:hover {
+                    @include transition();
+                }
+            }
+        }
+        .product {
+            position: relative;
+            a:hover {
+                color: #3193DE;
+                @include transition();
+            }
+            .description {
+                h3 {
+                    font-weight: normal;
+                    font-size: 1rem;
+                }
+                p {
+                    color: $color2;
+                    font-size: 13px;
+                    margin: {
+                        top: 1rem;
+                        bottom: 1rem;
+                        left: 5px;
+                    }
+                }
+                a {
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                    color: $color2;
+                    font-weight: bolder;
+                }
+            }
+        }
+        .shop-button {
+            background: $button-color2;
+            display: block;
+            width: 374px;
+            padding: 18px;
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 1rem 0;
+        }
+        .inner-products {
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+    }
