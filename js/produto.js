@@ -29,6 +29,8 @@ for (let i = 0; i < size.length; i++) {
 
 let featured = document.querySelectorAll(".description h3");
 
+featured[0].classList.add("active");
+
 featured[0].onclick = function(){
     this.classList.add("active");
     featured[1].classList.remove("active");

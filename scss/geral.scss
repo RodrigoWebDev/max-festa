@@ -313,3 +313,10 @@ ul {
             justify-content: flex-start;
         }
     }
+
+.specialists{
+    .product p:nth-child(4){
+        text-decoration:none;
+        color:inherit;
+    }
+}
