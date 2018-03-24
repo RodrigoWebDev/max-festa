@@ -1,46 +1,25 @@
-@import "geral.scss";
 //---NAV---
 nav.header-menu {
     background: $color1;
     padding: 0.4rem 0;
     position: relative;
-    a{
-        color:white;
-    }
-    ul {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
+    a {
         color: white;
-        div {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
+    }
+    .item-nav div {
+        div{
+            display:flex;
+            align-items:center;
             justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            width: 116px;
-            height: 90px;
             text-align: center;
-            margin: 0 4.5px;
-            cursor: pointer;
-            img {
-                @include image-center();
-            }
+            height:120px;
         }
         div:hover {
             @include transition();
         }
+
+    }
+    .item-nav:nth-child(1) div {
         div:nth-child(1) {
             background: #0A59C2;
         }
@@ -50,25 +29,30 @@ nav.header-menu {
         div:nth-child(3) {
             background: #FDAB00;
         }
-        div:nth-child(4) {
+    }
+    .item-nav:nth-child(2) div {
+        div:nth-child(1) {
             background: #00A000;
         }
-        div:nth-child(5) {
+        div:nth-child(2) {
             background: #6239B9;
         }
-        div:nth-child(6) {
+        div:nth-child(3) {
             background: #A400AE;
         }
-        div:nth-child(7) {
+    }
+    .item-nav:nth-child(3) div {
+        div:nth-child(1) {
             background: #D34827;
         }
-        div:nth-child(8) {
+        div:nth-child(2) {
             background: #459D6D;
         }
-        div:nth-child(9) {
+        div:nth-child(3) {
             background: #00BFF5;
         }
     }
+    
     .dropdown-nav {
         position: absolute;
         background: white;

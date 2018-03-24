@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Max Festa | É festa o ano todo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -41,7 +42,7 @@
             </div>
             <div class="product">
                 <img style="position:absolute;top:10%;right:0;" src="img/icons/release.jpg" alt="">
-                <h2><a href="produto.html">Camisa junina flanelada bebê</a></h2>
+                <h2><a href="#">Camisa junina flanelada bebê</a></h2>
                 <span style="font-size:10px;text-transform: uppercase;color:#686868;">código 8876</span>
                 <p style="margin-top:15px;">R$30,00</p>
                 <p>R$25,20</p>
@@ -69,10 +70,10 @@
                 <div class="flex">
                     <span style="color:#3193DE">Compartilhe:</span>
                     <ul class="flex" style="align-items:center;margin-left:15px;">
-                        <a href="#" style="margin-right:10px;">
+                        <a href="#">
                             <li><img src="img/icons/quick-facebook.jpg"></li>
                         </a>
-                        <a href="#" style="margin-right:10px;">
+                        <a href="#">
                             <li><img src="img/icons/quick-twitter.jpg"></li>
                         </a>
                         <a href="#">
@@ -83,155 +84,209 @@
             </div>
         </div>
     </div>
+
     <!--HEADER-->
+
     <header class="wow fadeIn">
-        <div class="header-topo">
-            <div>
-                <img class="icon" src="img/icons/headset-icon.png" alt="Central de Atendimento"><a href="">Central de Atendimento</a>
-
-                <img style="margin-left:2rem;" class="icon" src="img/icons/phone-icon.png" alt="phone"><a href="#">SAC:0800-0000</a>
+        <div class="container">
+            <div class="menu-mobile">
+                <ul>
+                    <li><a href="#">Central de Atendimento</a></li>
+                    <li><a href="#">SAC:0800-0000</a></li>
+                    <li><a href="#">Meus pedidos</a></li>
+                    <li><a href="#">Lista de Desejos</a></li>
+                    <li><a href="#">Minha conta</a></li>
+                    <li><a href="#">Meus pedidos</a></li>
+                </ul>
             </div>
-            <a href="index.html" class="a-link"><img class="logo" src="img/logo.png" alt="logo" title="logo"></a>
-            <div>
-                <img class="icon" src="img/icons/shop-icon.png" alt="Meus pedidos">
-                <a href="#" style="margin-right:2rem;">Meus pedidos</a>
+            <div class="header-topo">
+                <div class="row">
+                    <div class="col-md-4 display-none">
+                        <img class="icon" src="img/icons/headset-icon.png" alt="Central de Atendimento"><a href="">Central de Atendimento</a>
 
-                <img class="icon" src="img/icons/hearth-icon.png" alt="Lista de desejos">
-                <a href="#">Lista de Desejos</a>
-            </div>
-        </div>
-
-        <div class="header-bottom">
-            <div>
-                <a href="#" class="social"><img  src="img/icons/facebook.png" alt="facebook" title="facebook"></a>
-                <a style="margin-left:8px;" href="#" class="social"><img  src="img/icons/instagram.png" alt="Instagram" title="Instagram"></a>
-            </div>
-            <form method="post" action="">
-                <input type="text" placeholder="Digite sua busca...">
-                <button type="submit"><img src="img/icons/magnifier-icon.png" alt=""></button>
-            </form>
-            <div class="login-shop">
-                <div class="hover">
-                    <i class="fas fa-user"></i>
-                    <p>Minha Conta</p>
-                </div>
-                <div class="hover" style="margin-left:30px;">
-                    <i class="fas fa-shopping-basket"></i>
-                    <p>01 item</p>
-                </div>
-                <div class="login">
-                    <ul>
-                        <li><a href="#">Meus pedidos</a></li>
-                        <li><a href="#">Minha conta</a></li>
-                    </ul>
-                </div>
-
-                <div class="shop">
-
-                    <div class="flex" style="padding: 1rem;">
-
-                        <div>
-                            <img src="img/baby.jpg" alt="Chapeu">
+                        <img style="margin-left:2rem;" class="icon" src="img/icons/phone-icon.png" alt="phone"><a href="#">SAC:0800-0000</a>
+                    </div>
+                    <div class="col-md-4 flex">
+                        <a href="index.html" class="a-link"><img class="logo" src="img/logo.png" alt="logo" title="logo"></a>
+                        <div class="button-mobile">
+                            Menu
                         </div>
-                        <div style="width:319px">
-                            <h3>Lorem ipsum dolor sit</h3>
-                            <p>cod: 11033</p>
-                            <p>cor:preto/tamanho:5</p>
-                            <p>quantidade:1</p>
-                            <div>
+                    </div>
+
+                    <div class="col-md-4 display-none">
+                        <img class="icon" src="img/icons/shop-icon.png" alt="Meus pedidos"><a href="#" style="margin-right:2rem;">Meus pedidos</a>
+
+
+                        <img class="icon" src="img/icons/hearth-icon.png" alt="Lista de desejos"><a href="#">Lista de Desejos</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="row">
+                    <div class="col-md-3 display-none">
+                        <a href="#" class="social"><img  src="img/icons/facebook.png" alt="facebook" title="facebook"></a>
+                        <a style="margin-left:8px;" href="#" class="social"><img  src="img/icons/instagram.png" alt="Instagram" title="Instagram"></a>
+                    </div>
+                    <div class="col-md-6">
+                        <form method="post" action="">
+                            <input type="text" placeholder="Digite sua busca...">
+                            <button type="submit"><img src="img/icons/magnifier-icon.png" alt=""></button>
+                        </form>
+                    </div>
+                    <div class="col-md-3 display-none">
+                        <div class="login-shop">
+                            <div class="row">
+                                <div class="col-md-6 text-right">
+                                    <div class="hover">
+                                        <i class="fas fa-user"></i>
+                                        <p>Minha Conta</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 text-right">
+                                    <div class="hover" style="margin-left:30px;">
+                                        <i class="fas fa-shopping-basket"></i>
+                                        <p>01 item</p>
+                                    </div>
+                                </div>
                             </div>
-                            <span style="float:left; font-weight: bolder;">quantidade:</span>
-                            <span style="float:right;font-weight: bolder;">R$129,90</span>
-                        </div>
-                    </div>
-
-                    <div class="flex" style="padding: 1rem;">
-
-                        <div>
-                            <img src="img/baby.jpg" alt="Chapeu">
-                        </div>
-                        <div style="width:319px">
-                            <h3>Lorem ipsum dolor sit</h3>
-                            <p>cod: 11033</p>
-                            <p>cor:preto/tamanho:5</p>
-                            <p>quantidade:1</p>
-                            <div>
+                            <div class="login">
+                                <ul>
+                                    <li><a href="#">Meus pedidos</a></li>
+                                    <li><a href="#">Minha conta</a></li>
+                                </ul>
                             </div>
-                            <span style="float:left; font-weight: bolder;">quantidade:</span>
-                            <span style="float:right;font-weight: bolder;">R$129,90</span>
+
+                            <div class="shop">
+
+                                <div class="flex" style="padding: 1rem;">
+
+                                    <div>
+                                        <img src="img/baby.jpg" alt="Chapeu">
+                                    </div>
+                                    <div style="width:319px">
+                                        <h3>Lorem ipsum dolor sit</h3>
+                                        <p>cod: 11033</p>
+                                        <p>cor:preto/tamanho:5</p>
+                                        <p>quantidade:1</p>
+                                        <div>
+                                        </div>
+                                        <span style="float:left; font-weight: bolder;">quantidade:</span>
+                                        <span style="float:right;font-weight: bolder;">R$129,90</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex" style="padding: 1rem;">
+
+                                    <div>
+                                        <img src="img/baby.jpg" alt="Chapeu">
+                                    </div>
+                                    <div style="width:319px">
+                                        <h3>Lorem ipsum dolor sit</h3>
+                                        <p>cod: 11033</p>
+                                        <p>cor:preto/tamanho:5</p>
+                                        <p>quantidade:1</p>
+                                        <div>
+                                        </div>
+                                        <span style="float:left; font-weight: bolder;">quantidade:</span>
+                                        <span style="float:right;font-weight: bolder;">R$129,90</span>
+                                    </div>
+                                </div>
+                                <div class="flex" style="justify-content: space-between; align-items: center; background:#ededed;padding: 10px 1rem;">
+                                    <span>2 itens no carrinho</span>
+                                    <span style="font-weight: bolder; font-size:14px;">total:R$129,90</span>
+                                </div>
+                                <div class="flex shop-buttons" style="justify-content: space-between; padding: 1rem;">
+                                    <a href="" class="shop-button">Continuar <br>comprando</a>
+                                    <a href="" class="shop-button">Finalizar <br>compra</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex" style="justify-content: space-between; align-items: center; background:#ededed;padding: 10px 1rem;">
-                        <span>2 itens no carrinho</span>
-                        <span style="font-weight: bolder; font-size:14px;">total:R$129,90</span>
-                    </div>
-                    <div class="flex shop-buttons" style="justify-content: space-between; padding: 1rem;">
-                        <a href="" class="shop-button">Continuar <br>comprando</a>
-                        <a href="" class="shop-button">Finalizar <br>compra</a>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </header>
 
     <nav class="header-menu wow fadeIn">
-        <ul>
-            <div>
-               <a href="produto.html">
-                <img src="img/icons/halloween-evil-pumpkin.png" alt="">
-                <p>Halloween</p>
-                </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 item-nav">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <a href="#">
+                                <img src="img/icons/halloween-evil-pumpkin.png" alt="">
+                                <p>Halloween</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4  col-md-4">
+                            <a href="#">
+                                <img src="img/icons/clown-head-with-hat.png" alt="">
+                                <p>Temas para festa</p>
+                             </a>
+                        </div>
+
+                        <div class="col-sm-4  col-md-4">
+                            <a href="#">
+                                <img src="img/icons/mask.png" alt="">
+                                <p>Fantasias & adereços</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 item-nav">
+                    <div class="row">
+                        <div class="col-sm-4  col-md-4">
+                            <a href="#">
+                                <img src="img/icons/take-away-coffee.png" alt="">
+                                <p>Descartáveis</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4  col-md-4">
+                            <a href="#">
+                                <img src="img/icons/party.png" alt="">
+                                <p>Artigos para festas</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4  col-md-4">
+                            <a href="#">
+                                <img src="img/icons/balloon.jpg" alt="">
+                                <p>Balões e bexigas</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 item-nav">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <a href="#">
+                                <img src="img/icons/candy.jpg" alt="">
+                                <p>Doces</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <a href="#">
+                                <img src="img/icons/gifts.jpg" alt="">
+                                <p>Lembrancinhas</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <a href="#">
+                                <img src="img/icons/plus.png" alt="">
+                                <p>Todas as categorias</p>
+                                </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-               <a href="produto.html">
-                <img src="img/icons/clown-head-with-hat.png" alt="">
-                <p>Temas para festa</p>
-                </a>
-            </div>
-            <div>
-               <a href="produto.html">
-                <img src="img/icons/mask.png" alt="">
-                <p>Fantasias <br>& adereços</p>
-                </a>
-            </div>
-            <div>
-               <a href="produto.html">
-                <img src="img/icons/take-away-coffee.png" alt="">
-                <p>Descartáveis</p>
-                </a>
-            </div>
-            <div>
-               <a href="produto.html">
-                <img src="img/icons/party.png" alt="">
-                <p>Artigos <br>para festas</p>
-                </a>
-            </div>
-            <div>
-               <a href="produto.html">
-                <img src="img/icons/balloon.jpg" alt="">
-                <p>Balões e bexigas</p>
-                </a>
-            </div>
-            <div>
-               <a href="produto.html">
-                <img src="img/icons/candy.jpg" alt="">
-                <p>Doces</p>
-                </a>
-            </div>
-            <div>
-               <a href="produto.html">
-                <img src="img/icons/gifts.jpg" alt="">
-                <p>Lembrancinhas</p>
-                </a>
-            </div>
-            <div>
-               <a href="produto.html">
-                <img src="img/icons/plus.png" alt="">
-                <p>Todas as<br> categorias</p>
-                </a>
-            </div>
-        </ul>
+        </div>
+
+
         <div class="dropdown-nav flex">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -245,32 +300,34 @@
     <!--MASTHEAD-->
 
     <section class="masthead">
-        <div class="payment-info wow fadeIn">
-            <div>
-                <img src="img/icons/car.jpg" alt="">
-                <h3>Frete grátis</h3>
-                <p>Para sul e sudeste</p>
-                <span>*para compras acima de R$150</span>
-            </div>
+        <div class="container">
+            <div class="payment-info wow fadeIn row">
+                <div class="col-md-3">
+                    <img src="img/icons/car.jpg" alt="">
+                    <h3>Frete grátis</h3>
+                    <p>Para sul e sudeste<br>
+                        <span>*para compras acima de R$150</span></p>
+                </div>
 
-            <div>
-                <img src="img/icons/card.jpg" alt="">
-                <h3>6x sem juros</h3>
-                <p>Parcelas de R$25,00</p>
-                <span>compras acima de R$150</span>
-            </div>
+                <div class="col-md-3">
+                    <img src="img/icons/card.jpg" alt="">
+                    <h3>6x sem juros</h3>
+                    <p>Parcelas de R$25,00<br>
+                        <span>compras acima de R$150</span></p>
+                </div>
 
-            <div>
-                <img src="img/icons/off.jpg" alt="">
-                <h3>5%off</h3>
-                <span>para boleto e depósitos</span>
-            </div>
+                <div class="col-md-3">
+                    <img src="img/icons/off.jpg" alt="">
+                    <h3>5%off</h3>
+                    <span>para boleto e depósitos</span>
+                </div>
 
-            <div>
-                <img src="img/icons/security.jpg" alt="">
-                <h3>Segurança</h3>
-                <p>Compre online</p>
-                <span>garantia de recebimento</span>
+                <div class="col-md-3">
+                    <img src="img/icons/security.jpg" alt="">
+                    <h3>Segurança</h3>
+                    <p>Compre online <br>
+                        <span>garantia de recebimento</span></p>
+                </div>
             </div>
         </div>
 
@@ -279,7 +336,6 @@
 
             <div class="mySlides">
                 <img src="img/banner1.jpg" style="width:100%">
-                <a class="button" href="">Confira aqui</a>
             </div>
 
             <div class="mySlides">
@@ -297,800 +353,395 @@
         </div>
 
 
-        <div class="categories wow fadeInUp">
-            <a href="produto.html"><img src="img/mini-banner4.jpg" alt="Fantasias" title="Fantasias"></a>
-            <a href="produto.html"><img src="img/mini-banner3.jpg" alt="Festa junina" title="Festa junina"></a>
-            <a href="produto.html"><img src="img/mini-banner2.jpg" alt="Doces e confeitos" title="Doces e confeitos"></a>
-            <a href="produto.html"><img src="img/mini-banner1.jpg" alt="Descartáveis" title="Descartáveis"></a>
+        <div class="categories wow fadeInUp container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#"><img src="img/mini-banner4.jpg" alt="Fantasias" title="Fantasias"></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#"><img src="img/mini-banner3.jpg" alt="Festa junina" title="Festa junina"></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#"><img src="img/mini-banner2.jpg" alt="Doces e confeitos" title="Doces e confeitos"></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#"><img src="img/mini-banner1.jpg" alt="Descartáveis" title="Descartáveis"></a>
+                </div>
+            </div>
         </div>
     </section>
 
     <div class="container">
         <!--ASIDE-->
-        <aside>
-            <section class="aside-menu">
-                <div class="wow fadeInUp">
-                    <div class="accordion">
-                        <h2>Haloween</h2>
-                        <div class="hr"></div>
-                    </div>
-                    <ul>
-                        <li><a href="produto.html">Acessórios</a></li>
-                        <li><a href="produto.html">Chapéus</a></li>
-                        <li><a href="produto.html">Decoração</a></li>
-                        <li><a href="produto.html">Descartáveis</a></li>
-                        <li class="see-more"><a href="produto.html"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
-                    </ul>
-
-                </div>
-                <div class="wow fadeInUp">
-                    <div class="accordion">
-                        <h2>Temas para Festas</h2>
-                        <div class="hr"></div>
-                    </div>
-                    <ul>
-                        <li><a href="produto.html">Bolha de Sabão</a></li>
-                        <li><a href="produto.html">Placas divertidas</a></li>
-                        <li class="see-more"><a href="#"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
-                    </ul>
-
-                </div>
-                <div class="wow fadeInUp">
-                    <div class="accordion">
-                        <h2>Fntasias e Adereços</h2>
-                        <div class="hr"></div>
-                    </div>
-                    <ul>
-                        <li><a href="produto.html">Feminino</a></li>
-                        <li><a href="produto.html">Masculino</a></li>
-                        <li><a href="produto.html">Infantil</a></li>
-                        <li class="see-more"><a href="produto.html"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
-                    </ul>
-                </div>
-                <div class="wow fadeInUp">
-                    <div class="accordion">
-                        <h2>Fantasias e Adereços</h2>
-                        <div class="hr"></div>
-                    </div>
-                    <ul>
-                        <li><a href="produto.html">Feminino</a></li>
-                        <li><a href="produto.html">Masculino</a></li>
-                        <li><a href="produto.html">Infantil</a></li>
-                        <li class="see-more"><a href="#"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
-                    </ul>
-                </div>
-                <div class="wow fadeInUp">
-                    <div class="accordion">
-                        <h2>Artigos para festa</h2>
-                        <div class="hr"></div>
-                    </div>
-                    <ul>
-                        <li><a href="produto.html">Lorem</a></li>
-                        <li><a href="produto.html">Lorem</a></li>
-                        <li><a href="produto.html">Lorem</a></li>
-                        <li class="see-more"><a href="#"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
-                    </ul>
-                </div>
-                <div class="wow fadeInUp">
-                    <div class="accordion">
-                        <h2>Balões</h2>
-                        <div class="hr"></div>
-                    </div>
-                    <ul>
-                        <li><a href="produto.html">Lorem</a></li>
-                        <li><a href="produto.html">Lorem</a></li>
-                        <li><a href="produto.html">Lorem</a></li>
-                        <li class="see-more"><a href="#"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
-                    </ul>
-                </div>
-                <div class="wow fadeInUp">
-                    <div class="accordion">
-                        <h2>Doces</h2>
-                        <div class="hr"></div>
-                    </div>
-                    <ul>
-                        <li><a href="produto.html">Lorem</a></li>
-                        <li><a href="produto.html">Lorem</a></li>
-                        <li><a href="produto.html">Lorem</a></li>
-                        <li class="see-more"><a href="produto.html"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
-                    </ul>
-                </div>
-                <div class="wow fadeInUp">
-                    <div class="accordion">
-                        <h2>Lembrancinhas</h2>
-                        <div class="hr"></div>
-                    </div>
-                    <ul>
-                        <li><a href="produto.html">Lorem</a></li>
-                        <li><a href="produto.html">Lorem</a></li>
-                        <li><a href="produto.html">Lorem</a></li>
-                        <li class="see-more"><a href="produto.html"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
-                    </ul>
-                </div>
-            </section>
-            <section class="games wow fadeInUp">
-                <a href="#"><img src="img/games.jpg" alt=""></a>
-            </section>
-        </aside>
-
-        <!--CONTENT-->
-        <section class="content">
-            <img class="title-icon wow fadeInUp" src="img/icons/balloon1.jpg">
-            <h2 class="wow fadeInUp">Nossos parceiros</h2>
-
-            <div class="partners wow fadeInUp">
-                <img class="arrow" src="img/brands/arrow2-left.jpg">
-                <img class="arrow" src="img/brands/arrow2-right.jpg">
-                <div class="partners-div">
-                    <div>
-                        <a href="#"><img src="img/brands/fantasias-super.jpg" alt="Fantasias Super" title="Fantasias Super"></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="img/brands/festcolor.jpg" alt="Festcolor" title="Festcolor"></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="img/brands/silver-plastic.jpg" alt="Silver Plastic prático e elegante" title="Silver Plastic"></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="img/brands/ima.jpg" alt="Imã Aerossóis" title="Imã"></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="img/brands/prafesta.jpg" alt="Prafesta produtos descartaveis" title="Prafesta"></a>
-                    </div>
-                </div>
-                <div class="partners-div">
-                    <div>
-                        <a href="#"><img src="img/lorem.png" width="80" height="80"></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="img/lorem.png" width="80" height="80"></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="img/lorem.png" width="80" height="80"></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="img/lorem.png" width="80" height="80"></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="img/lorem.png" width="80" height="80"></a>
-                    </div>
-                </div>
-                <div class="partners-div">
-                    <div>
-                        <a href="#"><img src="img/lorem2.jpg" width="80" height="80"></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="img/lorem2.jpg" width="80" height="80"></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="img/lorem2.jpg" width="80" height="80"></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="img/lorem2.jpg" width="80" height="80"></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="img/lorem2.jpg" width="80" height="80"></a>
-                    </div>
-                </div>
-                <div class="partners-div">
-                    <div>
-                        <a href="#"><img src="img/lorem3.jpg" width="80" height="80"></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="img/lorem3.jpg" width="80" height="80"></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="img/lorem3.jpg" width="80" height="80"></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="img/lorem3.jpg" width="80" height="80"></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="img/lorem3.jpg" width="80" height="80"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="releases1 wow fadeInUp">
-                <img class="title-icon" src="img/icons/ballon2.jpg">
-                <h2>Lançamentos</h2>
-                <img class="arrow" src="img/brands/arrow2-left.jpg">
-                <img class="arrow" src="img/brands/arrow2-right.jpg">
-                <div class="products1">
-                    <div class="product">
-                        <a href="#"><img style="height:272px" src="img/products/product1.jpg" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
+        <div class="row">
+            <div class="col-md-3">
+                <aside>
+                    <section class="aside-menu">
+                        <div class="wow fadeInUp">
+                            <div class="accordion">
+                                <h2>Haloween</h2>
+                                <div class="hr"></div>
                             </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
+                            <ul>
+                                <li><a href="#">Acessórios</a></li>
+                                <li><a href="#">Chapéus</a></li>
+                                <li><a href="#">Decoração</a></li>
+                                <li><a href="#">Descartáveis</a></li>
+                                <li class="see-more"><a href="#"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
+                            </ul>
+
                         </div>
-
-                        <h2><a href="produto.html">Camisa junina flanelada bebê</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                        <p></p>Quantidade:<input type="number">
-                    </div>
-
-                    <div class="product">
-                        <a href="#"><img src="img/products/product2.jpg" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                        <div class="wow fadeInUp">
+                            <div class="accordion">
+                                <h2>Temas para Festas</h2>
+                                <div class="hr"></div>
                             </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
-                        </div>
-                        <h2><a href="produto.html">Bolinha de sabão dc comics<br> da mulher maravilha</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                    </div>
+                            <ul>
+                                <li><a href="#">Bolha de Sabão</a></li>
+                                <li><a href="#">Placas divertidas</a></li>
+                                <li class="see-more"><a href="#"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
+                            </ul>
 
-                    <div class="product">
-                        <a href="#"><img style="height:264px" src="img/products/product3.jpg" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                        </div>
+                        <div class="wow fadeInUp">
+                            <div class="accordion">
+                                <h2>Fntasias e Adereços</h2>
+                                <div class="hr"></div>
                             </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
+                            <ul>
+                                <li><a href="#">Feminino</a></li>
+                                <li><a href="#">Masculino</a></li>
+                                <li><a href="#">Infantil</a></li>
+                                <li class="see-more"><a href="#"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
+                            </ul>
                         </div>
-
-                        <h2><a href="produto.html">Camisa junina flanelada bebê</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                        <span>lançamento</span>
-                    </div>
-                </div>
-                <div class="products1">
-                    <div class="product">
-                        <a href="#"><img width="200" height="200" src="img/lorem.png" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                        <div class="wow fadeInUp">
+                            <div class="accordion">
+                                <h2>Fantasias e Adereços</h2>
+                                <div class="hr"></div>
                             </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
+                            <ul>
+                                <li><a href="#">Feminino</a></li>
+                                <li><a href="#">Masculino</a></li>
+                                <li><a href="#">Infantil</a></li>
+                                <li class="see-more"><a href="#"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
+                            </ul>
                         </div>
-
-                        <h2><a href="produto.html">Lorem</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                    </div>
-
-                    <div class="product">
-                        <a href="#"><img width="200" height="200" src="img/lorem.png" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                        <div class="wow fadeInUp">
+                            <div class="accordion">
+                                <h2>Artigos para festa</h2>
+                                <div class="hr"></div>
                             </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
+                            <ul>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li class="see-more"><a href="#"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
+                            </ul>
                         </div>
-                        <h2><a href="produto.html">Lorem</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                    </div>
-
-                    <div class="product">
-                        <a href="#"><img width="200" height="200" src="img/lorem.png" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                        <div class="wow fadeInUp">
+                            <div class="accordion">
+                                <h2>Balões</h2>
+                                <div class="hr"></div>
                             </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
+                            <ul>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li class="see-more"><a href="#"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
+                            </ul>
                         </div>
-
-                        <h2><a href="produto.html">Lorem</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                    </div>
-                </div>
-                <div class="products1">
-                    <div class="product">
-                        <a href="#"><img width="200" height="200" src="img/lorem2.jpg" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                        <div class="wow fadeInUp">
+                            <div class="accordion">
+                                <h2>Doces</h2>
+                                <div class="hr"></div>
                             </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
+                            <ul>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li class="see-more"><a href="#"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
+                            </ul>
                         </div>
-
-                        <h2><a href="produto.html">Lorem</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                    </div>
-
-                    <div class="product">
-                        <a href="#"><img width="200" height="200" src="img/lorem2.jpg" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                        <div class="wow fadeInUp">
+                            <div class="accordion">
+                                <h2>Lembrancinhas</h2>
+                                <div class="hr"></div>
                             </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
+                            <ul>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li class="see-more"><a href="#"><img src="img/icons/plusplus.jpg" alt="">veja mais</a></li>
+                            </ul>
                         </div>
-                        <h2><a href="produto.html">Lorem</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                    </div>
-
-                    <div class="product">
-                        <a href="#"><img width="200" height="200" src="img/lorem2.jpg" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
-                        </div>
-
-                        <h2><a href="produto.html">Lorem</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                    </div>
-                </div>
-                <div class="products1">
-                    <div class="product">
-                        <a href="#"><img width="200" height="200" src="img/lorem3.jpg" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
-                        </div>
-
-                        <h2><a href="produto.html">Lorem</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                    </div>
-
-                    <div class="product">
-                        <a href="#"><img width="200" height="200" src="img/lorem3.jpg" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
-                        </div>
-                        <h2><a href="produto.html">Lorem</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                    </div>
-
-                    <div class="product">
-                        <a href="#"><img width="200" height="200" src="img/lorem3.jpg" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
-                        </div>
-
-                        <h2><a href="produto.html">Lorem</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                    </div>
-                </div>
+                    </section>
+                    <section class="games wow fadeInUp">
+                        <a href="#"><img src="img/games.jpg" alt=""></a>
+                    </section>
+                </aside>
             </div>
 
-            <div class="product-banner wow fadeInUp">
-                <div>
-                    <img src="img/banner-center1.jpg" alt="banner1">
-                    <a class="button" href="produto.html">Conheça</a>
-                </div>
-                <div>
-                    <img src="img/banner-center2.jpg" alt="banner1">
-                    <a class="button" href="produto.html">Conheça</a>
-                </div>
+            <!--CONTENT-->
+            <div class="col-md-9">
+                <section class="content">
+                    <h2 class="wow fadeInUp">Nossos parceiros</h2>
+                    <hr>
+
+                    <div class="partners wow fadeInUp" style="margin-bottom:2rem">
+                        <div class="partners-div row">
+                            <div class="col-md-3">
+                                <a href="#"><img src="img/brands/fantasias-super.jpg" alt="Fantasias Super" title="Fantasias Super"></a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#"><img src="img/brands/festcolor.jpg" alt="Festcolor" title="Festcolor"></a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#"><img src="img/brands/silver-plastic.jpg" alt="Silver Plastic prático e elegante" title="Silver Plastic"></a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#"><img src="img/brands/ima.jpg" alt="Imã Aerossóis" title="Imã"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="releases1 wow fadeInUp">
+                        <h2>Lançamentos</h2>
+                        <hr>
+                        <div class="products1 row">
+                            <div class="product col-md-4">
+                                <a href="#"><img style="height:272px" src="img/products/product1.jpg" alt="produto" title="produto"></a>
+                                <div class="inner-products">
+                                    <span class="icon-arrow icon-arrow-left"></span>
+                                    <div class="color-squares">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <span class="icon-arrow icon-arrow-right"></span>
+                                </div>
+
+                                <h2><a href="#">Camisa junina flanelada bebê</a></h2>
+                                <p>R$30,00</p>
+                                <p>R$25,20</p>
+                                <p><span>10%</span> de desconto no boleto</p>
+                                <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
+                                <p></p>Quantidade:<input type="number">
+                            </div>
+
+                            <div class="product col-md-4">
+                                <a href="#"><img src="img/products/product2.jpg" alt="produto" title="produto"></a>
+                                <div class="inner-products">
+                                    <span class="icon-arrow icon-arrow icon-arrow-left"></span>
+                                    <div class="color-squares">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <span class="icon-arrow icon-arrow-right"></span>
+                                </div>
+                                <h2><a href="#">Bolinha de sabão dc comics<br> da mulher maravilha</a></h2>
+                                <p>R$30,00</p>
+                                <p>R$25,20</p>
+                                <p><span>10%</span> de desconto no boleto</p>
+                                <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
+                            </div>
+
+                            <div class="product col-md-4">
+                                <a href="#"><img style="height:264px" src="img/products/product3.jpg" alt="produto" title="produto"></a>
+                                <div class="inner-products">
+                                    <span class="icon-arrow icon-arrow-left"></span>
+                                    <div class="color-squares">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <span class="icon-arrow icon-arrow-right"></span>
+                                </div>
+
+                                <h2><a href="#">Camisa junina flanelada bebê</a></h2>
+                                <p>R$30,00</p>
+                                <p>R$25,20</p>
+                                <p><span>10%</span> de desconto no boleto</p>
+                                <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
+                                <span>lançamento</span>
+                            </div>
+                        </div>
+
+                        <div class="product-banner wow fadeInUp row">
+                            <div class="col-md-6">
+                                <img src="img/banner-center1.jpg" alt="banner1">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/banner-center2.jpg" alt="banner1">
+                            </div>
+                        </div>
+
+                        <div class="releases2 wow fadeInUp">
+                            <h2>Mais vistos</h2>
+                            <hr>
+                            <div class="products2 row">
+                                <div class="product col-md-4">
+                                    <a href="#"><img style="height:272px" src="img/products/product1.jpg" alt="produto" title="produto"></a>
+                                    <div class="inner-products">
+                                        <span class="icon-arrow icon-arrow-left"></span>
+                                        <div class="color-squares">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <span class="icon-arrow icon-arrow-right"></span>
+                                    </div>
+
+                                    <h2><a href="#">Camisa junina flanelada bebê</a></h2>
+                                    <p>R$30,00</p>
+                                    <p>R$25,20</p>
+                                    <p><span>10%</span> de desconto no boleto</p>
+                                    <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
+                                    <p></p>Quantidade:<input type="number">
+                                </div>
+
+                                <div class="product col-md-4">
+                                    <a href="#"><img src="img/products/product2.jpg" alt="produto" title="produto"></a>
+                                    <div class="inner-products">
+                                        <span class="icon-arrow icon-arrow icon-arrow-left"></span>
+                                        <div class="color-squares">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <span class="icon-arrow icon-arrow-right"></span>
+                                    </div>
+                                    <h2><a href="#">Bolinha de sabão dc comics<br> da mulher maravilha</a></h2>
+                                    <p>R$30,00</p>
+                                    <p>R$25,20</p>
+                                    <p><span>10%</span> de desconto no boleto</p>
+                                    <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
+                                </div>
+
+                                <div class="product col-md-4">
+                                    <a href="#"><img style="height:264px" src="img/products/product3.jpg" alt="produto" title="produto"></a>
+                                    <div class="inner-products">
+                                        <span class="icon-arrow icon-arrow-left"></span>
+                                        <div class="color-squares">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <span class="icon-arrow icon-arrow-right"></span>
+                                    </div>
+
+                                    <h2><a href="#">Camisa junina flanelada bebê</a></h2>
+                                    <p>R$30,00</p>
+                                    <p>R$25,20</p>
+                                    <p><span>10%</span> de desconto no boleto</p>
+                                    <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
+                                    <span>lançamento</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-
-            <div class="releases2 wow fadeInUp">
-                <img class="title-icon" src="img/icons/balloon3.jpg">
-                <h2>Mais vistos</h2>
-                <img class="arrow" src="img/brands/arrow2-left.jpg">
-                <img class="arrow" src="img/brands/arrow2-right.jpg">
-                <div class="products2">
-                    <div class="product">
-                        <a href="#"><img style="height:272px" src="img/products/product1.jpg" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
-                        </div>
-
-                        <h2><a href="produto.html">Camisa junina flanelada bebê</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                        <p></p>Quantidade:<input type="number">
-                    </div>
-
-                    <div class="product">
-                        <a href="#"><img src="img/products/product2.jpg" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
-                        </div>
-                        <h2><a href="produto.html">Bolinha de sabão dc comics<br> da mulher maravilha</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                    </div>
-
-                    <div class="product">
-                        <a href="#"><img style="height:264px" src="img/products/product3.jpg" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
-                        </div>
-
-                        <h2><a href="produto.html">Camisa junina flanelada bebê</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                        <span>lançamento</span>
-                    </div>
-                </div>
-                <div class="products2">
-                    <div class="product">
-                        <a href="#"><img width="200" height="200" src="img/lorem.png" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
-                        </div>
-
-                        <h2><a href="produto.html">Lorem</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                    </div>
-
-                    <div class="product">
-                        <a href="#"><img width="200" height="200" src="img/lorem.png" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
-                        </div>
-                        <h2><a href="produto.html">Lorem</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                    </div>
-
-                    <div class="product">
-                        <a href="#"><img width="200" height="200" src="img/lorem.png" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
-                        </div>
-
-                        <h2><a href="produto.html">Lorem</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                    </div>
-                </div>
-                <div class="products2">
-                    <div class="product">
-                        <a href="#"><img width="200" height="200" src="img/lorem2.jpg" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
-                        </div>
-
-                        <h2><a href="produto.html">Lorem</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                    </div>
-
-                    <div class="product">
-                        <a href="#"><img width="200" height="200" src="img/lorem2.jpg" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
-                        </div>
-                        <h2><a href="produto.html">Lorem</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                    </div>
-
-                    <div class="product">
-                        <a href="#"><img width="200" height="200" src="img/lorem2.jpg" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
-                        </div>
-
-                        <h2><a href="produto.html">Lorem</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                    </div>
-                </div>
-                <div class="products2">
-                    <div class="product">
-                        <a href="#"><img width="200" height="200" src="img/lorem3.jpg" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
-                        </div>
-
-                        <h2><a href="produto.html">Lorem</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                    </div>
-
-                    <div class="product">
-                        <a href="#"><img width="200" height="200" src="img/lorem3.jpg" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
-                        </div>
-                        <h2><a href="produto.html">Lorem</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                    </div>
-
-                    <div class="product">
-                        <a href="#"><img width="200" height="200" src="img/lorem3.jpg" alt="produto" title="produto"></a>
-                        <div class="inner-products">
-                            <span class="icon-arrow icon-arrow-left"></span>
-                            <div class="color-squares">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <span class="icon-arrow icon-arrow-right"></span>
-                        </div>
-
-                        <h2><a href="produto.html">Lorem</a></h2>
-                        <p>R$30,00</p>
-                        <p>R$25,20</p>
-                        <p><span>10%</span> de desconto no boleto</p>
-                        <p>ou <span>5x</span> de <span>R$5,60</span> sem juros</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </div>
 
     <!--GIFTS-->
-    <section class="gifts wow fadeInUp">
-        <a href="produto.html"><img src="img/banner-footer.jpg" alt="banner footer"></a>
+    <section class="gifts wow fadeInUp" style="margin-top:4rem">
+        <a href="#"><img src="img/banner-footer.jpg" alt="banner footer"></a>
     </section>
 
     <!--NEWSLETTER-->
+
     <section class="newsletter wow fadeInUp">
-        <div>
-            <img src="img/icons/footer-subscribe.jpg" alt="Newsletter">
-            <h2>Maxfesta news</h2>
-            <p>Cadaster-se e receba ofertas exclusivas</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/icons/footer-subscribe.jpg" alt="Newsletter">
+                    <h2>Maxfesta news</h2>
+                    <p>Cadaster-se e receba ofertas exclusivas</p>
+                </div>
+                <div class="col-md-6">
+                    <form method="post" action="">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <input type="text" placeholder="Digite seu nome...">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="email" placeholder="Digite seu e-mail...">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="submit" value="enviar">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <form method="post" action="">
-            <input type="text" placeholder="Digite seu nome...">
-            <input type="email" placeholder="Digite seu e-mail...">
-            <input type="submit" value="enviar">
-        </form>
     </section>
+
 
     <!--BOTTOM MENU-->
     <section class="bottom-menu wow fadeInUp">
-        <div>
-            <h2>Central de Ajuda</h2>
-            <ul>
-                <li><a href="#">Central de Atendimento</a></li>
-                <li><a href="#">Envio e entrega</a></li>
-                <li><a href="#">Navegando e Comparando</a></li>
-                <li><a href="#">Trocas e Devoluções</a></li>
-                <li><a href="#">Fale Conosco</a></li>
-                <li><a href="#">Mapa do Site</a></li>
-            </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>Central de Ajuda</h2>
+                    <ul>
+                        <li><a href="#">Central de Atendimento</a></li>
+                        <li><a href="#">Envio e entrega</a></li>
+                        <li><a href="#">Navegando e Comparando</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Mapa do Site</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h2>Insitucional</h2>
+                    <ul>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Nosass lojas</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Afiliados</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h2>Atendimento</h2>
+                    <ul>
+                        <li><img src="img/icons/footer-headset.jpg" alt="Televendas">Televendas:0800-0000></li>
+                        <li><img src="img/icons/footer-message.jpg" alt="Sac">Sac:0800-0000</li>
+                        <li><img src="img/icons/footer-clock.jpg" alt="Horario de atendimento">Horário de Atendimento:<br>De segunda a sexta das 8h as 18h</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <a href="#"><img src="img/facebook-page.jpg" alt="Pagina do facebook"></a>
+                    <ul style="display:flex;align-items:center;justify-content: center;margin-top:20px;">
+                        <li><a href="#"><img src="img/icons/footer-facebook.jpg"></a></li>
+                        <li><a href="#"><img src="img/icons/footer-twitter.jpg"></a></li>
+                        <li><a href="#"><img src="img/icons/footer-printerest.jpg"></a></li>
+                        <li><a href="#"><img src="img/icons/footer-instagram.jpg"></a></li>
+                        <li><a href="#"><img src="img/icons/footer-youtube.jpg"></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div>
-            <h2>Insitucional</h2>
-            <ul>
-                <li><a href="#">Quem somos</a></li>
-                <li><a href="#">Nosass lojas</a></li>
-                <li><a href="#">Política de Privacidade</a></li>
-                <li><a href="#">Afiliados</a></li>
-            </ul>
-        </div>
-        <div>
-            <h2>Atendimento</h2>
-            <ul>
-                <li><img src="img/icons/footer-headset.jpg" alt="Televendas">Televendas:0800-0000></li>
-                <li><img src="img/icons/footer-message.jpg" alt="Sac">Sac:0800-0000</li>
-                <li><img src="img/icons/footer-clock.jpg" alt="Horario de atendimento">Horário de Atendimento:<br>De segunda a sexta das 8h as 18h</li>
-            </ul>
-        </div>
-        <div>
-            <a href="#"><img src="img/facebook-page.jpg" alt="Pagina do facebook"></a>
-            <ul style="display:flex;align-items:center;justify-content: center;margin-top:20px;">
-                <li><a href="#"><img src="img/icons/footer-facebook.jpg"></a></li>
-                <li><a href="#"><img src="img/icons/footer-twitter.jpg"></a></li>
-                <li><a href="#"><img src="img/icons/footer-printerest.jpg"></a></li>
-                <li><a href="#"><img src="img/icons/footer-instagram.jpg"></a></li>
-                <li><a href="#"><img src="img/icons/footer-youtube.jpg"></a></li>
-            </ul>
-        </div>
-
     </section>
 
     <!--FOOTER-->
-    <footer wow fadeInUp>
-        <div>
-            <div style="display:flex;align-items:center;">
+    <footer class="wow fadeInUp container">
+        <div class="row">
+            <div class="col-md-6 flex" style="align-items:center;">
                 <h3>Pagamentos:</h3>
                 <a href="#"><img src="img/icons/dinner-club.jpg" alt="Diners club"></a>
                 <a href="#"><img src="img/icons/mastercard.jpg" alt="Master card"></a>
@@ -1100,24 +751,29 @@
                 <a href="#"><img src="img/icons/boleto.jpg" alt="Boleto"></a>
             </div>
 
-            <div style="display:flex;align-items:center;">
-                <h3>Certificados:</h3>
+            <div class="col-md-6 text-right flex" style="align-items:center;">
+
+
+                <h3 class="text-left">Certificados:</h3>
                 <a href="#"><img src="img/brands/claersale.jpg" alt="Clearsale site seguro - antifraude" title="Clearsale"></a>
                 <a href="#"><img src="img/brands/google.jpg" alt="Google safe browsing" title="Google Safe Browsing"></a>
                 <a href="#"><img src="img/brands/procon.jpg" alt="Fundação Procon SP" title="Procon SP"></a>
             </div>
         </div>
+
         <div class="hr"></div>
-        <div>
-            <div>
+        <div class="row">
+            <div class="col-md-10">
                 <p>IPSUN LOREN LOREN / Av.Franciso Matarazzo, 1500 - 6o andar - São Paulo - SP CEP05001-100 CNPJ:00.000.000/0001-00 - Inscrição Estadual:000.000.000.000</p>
                 <p>Telefone:(11)0000-0000/E-mail:sac@ipsunloren.com.br</p>
             </div>
-            <div>
+            <div class="col-md-2">
                 <a href="#"><img src="img/brands/rakuten.jpg" alt="Rakuten Digital Commerce"></a>
             </div>
         </div>
     </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/button-mobile.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
@@ -1126,9 +782,6 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="js/script.js"></script>
     <script src="js/aside.js"></script>
-    <script src="js/partners.js"></script>
-    <script src="js/products.js"></script>
-    <script src="js/products2.js"></script>
     <script src="js/slide.js"></script>
     <script src="js/quick-view.js"></script>
 </body>

@@ -1,22 +1,39 @@
-@import "geral.scss";
 //---HEADER---
 header {
-    padding: {
-        left: 3rem;
-        right: 3rem;
-    }
     background: url(../img/bg-header.jpg);
     font-size: 14px;
+    .menu-mobile {
+        background: #101883;
+        width:100%;
+        position:absolute;
+        z-index:4;
+        top:30%;
+        left:0;
+        display:none;
+        a{
+            color:white;
+            display:block;
+            padding:1rem;
+            text-align:center;
+        }
+        a:hover{
+            text-decoration:none;
+            background:white;
+            color:#101883;
+        }
+    }
+    .button-mobile{
+        display:none;
+    }
     .header-topo {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        div:nth-child(1),
-        div:nth-child(3) {
-            margin-top: 28px;
+        padding-top:28px;
+        div:nth-child(3){
+            display:flex;
+            justify-content:flex-end;
+        }
+        div:nth-child(2){
+            align-items:center;
+            justify-content: space-between;
         }
         img.logo {
             width: 295px;
@@ -33,23 +50,11 @@ header {
             color: #101883;
             margin-left: 8px;
         }
-        .a-link {
-            margin: 0;
-            margin: {
-                right: 57px;
-                top: 20px;
-            }
-        }
 
     }
 
     .header-bottom {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
+        padding:2rem 0;
         img {
             width: 30px;
         }
@@ -57,7 +62,7 @@ header {
             @include transition();
         }
         form {
-            width: 650px;
+            width:100%;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -70,11 +75,10 @@ header {
                 border-top-left-radius: 4px;
                 border-bottom-left-radius: 4px;
                 width: 100%;
-                margin-left: 100px;
                 position: relative;
             }
-            button[type="submit"]{
-                margin-left:-1px;
+            button[type="submit"] {
+                margin-left: -1px;
             }
             button {
                 background: white;
@@ -108,8 +112,8 @@ header {
                 background: white;
                 width: 150px;
                 position: absolute;
-                top: 100%;
-                right: 26%;
+                top: 50%;
+                right: 30%;
                 text-transform: uppercase;
                 font-size: 12px;
                 z-index: 1;
@@ -134,7 +138,7 @@ header {
             .shop {
                 background: white;
                 position: absolute;
-                top: 100%;
+                top: 50%;
                 right: -10%;
                 z-index: 2;
                 text-transform: uppercase;
@@ -147,6 +151,7 @@ header {
                 display: none;
                 h3 {
                     font-weight: normal;
+                    font-size:1rem;
                 }
                 img {
                     float: left;
