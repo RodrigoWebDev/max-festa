@@ -24,6 +24,16 @@ header {
     }
     .button-mobile{
         display:none;
+        svg{
+            cursor:pointer;
+            font-size:2rem;
+            color:$color1;
+        }
+        svg:hover{
+            opacity:0.4;
+            transition:.2s;
+        }
+        
     }
     .header-topo {
         padding-top:28px;
